@@ -1,0 +1,30 @@
+.search-wrapper {
+    text-align: center;
+    padding: 200px;
+    padding-bottom: 0px;
+}
+
+.search-input {
+    height: 56px; 
+    width: 461px;
+    border-radius: 4px;
+}
+
+.search-button {
+    height: 36px; 
+    width: 72px;
+    border-radius: 4px;
+    padding: 10px, 20px, 10px, 20px;
+}
+
+.results-wrapper {
+
+}
+
+.results {
+
+}
+
+.result {
+
+}
