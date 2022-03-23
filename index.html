@@ -7,13 +7,24 @@
     <body>
         <script src="./script.js"></script>
 
-        <!-- Search Field -->
-        <input placeholder="Enter location" />
+        <div class="search-wrapper">
+            <!-- Search Field -->
+            <label for="location">Search
+            <input class="search-input" data-behavior="search-input" name="location" placeholder="Enter location" />
+            </label>
 
-        <!-- Form Button -->
-        <button type="submit"> Search</button>
+            <!-- Form Button -->
+            <button class="search-button" type="submit" data-behavior="search-button">Search</button>
+
+        </div>
 
         <!-- Results List -->
+
+        <div class="results-wrapper">
+            <ul class="results">
+
+            </ul>
+        </div>
 
         <!-- Review -->
             <!-- address -->
