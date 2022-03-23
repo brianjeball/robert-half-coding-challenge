@@ -8,9 +8,9 @@ Requirements
     height: 56px; 
     width: 461px;
     border-radius: 4px;
+    Search placeholder: Enter location
 
-- Search placeholder: Enter location
-- When the user press Enter on the keyboard displays requirement 3 below
+- When the user presses Enter on the keyboard displays requirement 3 below
 - Button that when click displays requirement 3 below.
     Text: Search
     height: 36px; 
