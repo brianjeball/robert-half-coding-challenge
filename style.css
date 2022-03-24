@@ -10,6 +10,14 @@
     border-radius: 4px;
 }
 
+.search-input.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+}
+
 .search-button {
     height: 36px; 
     width: 72px;
