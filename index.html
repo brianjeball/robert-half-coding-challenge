@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div class="search-wrapper">
-            <!-- Search Field -->
-            <label for="location">Search</label>
-            <input class="search-input" data-behavior="search-input" name="location" placeholder="Enter location" />
-            <p hidden class="error-message" data-behavior="error-message">Please input a value</p>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .search-wrapper {
+            text-align: center;
+            padding: 200px;
+            padding-bottom: 0px;
+        }
 
-            <!-- Form Button -->
-            <button class="search-button" type="submit" data-behavior="search-button">Search</button>
-        </div>
+        .search-input {
+            height: 56px;
+            width: 461px;
+            border-radius: 4px;
+        }
 
-        <!-- reviews List -->
+        .search-input.error {
+            border-color: red;
+        }
 
-        <div class="reviews-wrapper">
-            <ul class="reviews">
-                <li class="review">
-                    <img class="thumbnail" src="" alt="review location image"/>
-                    <p class="address"><b>Address:</b><span data-behavior="review-address"></span></p>
-                    <div class="star-rating"></div>
-                    <p class="review-count"></p>
-                    <a href="https://www.google.com" target="_blank" class="link"><p>View Parking Lot</p></a>
-                </li>
-            </ul>
-        </div>
+        .error-message {
+            color: red;
+        }
 
-        <!-- Review -->
-            <!-- address -->
-            <!-- image (if available) -->
-            <!-- star rating -->
-            <!-- review count -->
-            <!-- Yelp page link -->
+        .search-button {
+            height: 36px;
+            width: 72px;
+            border-radius: 4px;
+            padding: 10px, 20px, 10px, 20px;
+        }
 
-        <!-- Parking Lot Score -->
+        .reviews-wrapper {
+            padding: 50px;
+        }
 
-        <script src="./node_modules/axios/dist/axios.min.js"></script>
-        <script src="./script.js"></script>
-    </body>
+        .reviews {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .review {
+            padding: 20px;
+            border: black 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-wrapper">
+        <!-- Search Field -->
+        <label for="location">Search</label>
+        <input class="search-input" data-behavior="search-input" name="location" placeholder="Enter location" />
+        <p hidden class="error-message" data-behavior="error-message">Please input a value</p>
+
+        <!-- Form Button -->
+        <button class="search-button" type="submit" data-behavior="search-button">Search</button>
+    </div>
+
+    <!-- reviews List -->
+
+    <div class="reviews-wrapper">
+        <ul class="reviews">
+            <li class="review">
+                <img class="thumbnail" src="" alt="review location image" />
+                <p class="address"><b>Address:</b><span data-behavior="review-address"></span></p>
+                <div class="star-rating"></div>
+                <p class="review-count"></p>
+                <a href="https://www.google.com" target="_blank" class="link">
+                    <p>View Parking Lot</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Review -->
+    <!-- address -->
+    <!-- image (if available) -->
+    <!-- star rating -->
+    <!-- review count -->
+    <!-- Yelp page link -->
+
+    <!-- Parking Lot Score -->
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./script.mjs"></script>
+</body>
+
 </html>

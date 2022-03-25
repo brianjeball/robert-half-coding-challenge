@@ -1,4 +1,4 @@
-import { fetchQuery } from "./server";
+let fetchQuery = require("./server");
 
 // SearchForm
 class SearchFrom {
@@ -48,12 +48,13 @@ class SearchFrom {
         }
 
         const API_KEY = 'F1h0239h1XTPfrvtCbcG5pFHrskfxoZPhoCqnALdqgV3cCNj5LpRCZodMlI5GonuajWsBxYifq3cMg-l59NBv88xsKP1X49XGgl-L-oj24YTVMsqnS8Scy7jLXg8YnYx'
-
         const id = 'north-india-restaurant-san-francisco';
+
     // GET call to API
         // add input value
         console.log(input.value);
-        fetchQuery()
+        const data = fetchQuery();
+        console.log(data.businesses[0])
     // return results, if successful
     // if failed, handle error
     // fetch query
