@@ -145,7 +145,7 @@ class SearchFrom {
                     <p class="address"><b>Address: </b><span data-behavior="review-address">${result.location.display_address[0] + ' ' + result.location.display_address[1]}</span></p>
                     
                     <p class="lot-score">Lot Score: <span data-behavior="review:lot_score">${this.lotScore(result)}</span></p>
-                    <a href="${result.url}" target="_blank" class="link"><p>View Parking Lot</p></a>
+                    <a href="${result.url}" target="_blank" class="link">View Parking Lot</a>
                 </div>
             `
             li.innerHTML = resultEl;
