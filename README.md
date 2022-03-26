@@ -4,7 +4,7 @@ Yelp API Search App
 ### Web App that finds and displays the lowest rated parking lots in a given region using the Yelp API
 
 Requirements
-- [ ] Search field that enables you to enter a location like San Francisco or Atlanta.
+- [x] Search field that enables you to enter a location like San Francisco or Atlanta.
     - height: 56px; 
     - width: 461px;
     - border-radius: 4px;
@@ -22,6 +22,14 @@ Requirements
 
 - [ ] Display a parking lot score that factors in number of reviews and ratings, using the formula: score = ( number of reviews * rating ) / (number of reviews + 1) to understand a bit about why this is needed, read this -  https://fulmicoton.com/posts/bayesian_rating/
 
+HELP: You can get started with the yelp api here - https://www.yelp.com/developers/documentation/v3/get_started
+
+Rules:
+
+No use of frontend frameworks or libraries such has Angular, React, Vue, JQuery, etc. However other utility JavaScript packages such as axios can be used
+Upload code to a github repo and reply to this email with the link upon completion 
+Include a README with instructions to run the solution in the repo
+
 Not Required
 - [ ] Yelp API Authentication
     - https://www.yelp.com/developers/documentation/v3/authentication
@@ -31,3 +39,5 @@ Not Required
 - [ ] Result hover state
 - [ ] loading state
 - [ ] results pagination, limit to 10 results
+- [ ] no results state
+- [ ] add filter for results
