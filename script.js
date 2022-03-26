@@ -62,7 +62,7 @@ class SearchFrom {
             errorClass: 'error'
         }
 
-        this.initialize().bind(this);
+        this.initialize();
     }
 
     initialize() {
@@ -74,7 +74,7 @@ class SearchFrom {
             e.preventDefault();
             // Enter key code = 'Enter'
             if (e.key === 'Enter') {
-                this.onSubmit().bind(this);
+                this.onSubmit();
             }
         })
     }
@@ -94,7 +94,7 @@ class SearchFrom {
             return
         } else {
             input.classList.contains(errorClass) ? input.classList.remove(errorClass) : null;
-            inputErrorMessage.hidden ? inputErrorMessage.hidden = false : inputErrorMessage.hidden = true;
+            inputErrorMessage.hidden ? inputErrorMessage.hidden = false : null;
         }
 
         // return results, if successful
