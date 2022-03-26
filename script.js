@@ -91,6 +91,7 @@ class SearchFrom {
         if (input.value === '' || !input.value) {
             input.classList.add(errorClass);
             inputErrorMessage.hidden = false;
+            return
         } else {
             input.classList.contains(errorClass) ? input.classList.remove(errorClass) : null;
             inputErrorMessage.hidden ? inputErrorMessage.hidden = false : inputErrorMessage.hidden = true;
@@ -113,7 +114,8 @@ class SearchFrom {
         const {rating, review_count} = result;
         let score = (review_count * rating) / (review_count + 1);
 
-        return score;
+        // reduce score to 2 decimal places
+        return score.toFixed(2);
     }
 
     /**
@@ -142,7 +144,7 @@ class SearchFrom {
                     <p class="review-count">${result.review_count} Reviews</p>
                     <p class="address"><b>Address: </b><span data-behavior="review-address">${result.location.display_address[0] + ' ' + result.location.display_address[1]}</span></p>
                     
-                    <p class="lot-score">Lot Score:<span data-behavior="review:lot_score">${this.lotScore(result)}</span></p>
+                    <p class="lot-score">Lot Score: <span data-behavior="review:lot_score">${this.lotScore(result)}</span></p>
                     <a href="${result.url}" target="_blank" class="link"><p>View Parking Lot</p></a>
                 </div>
             `
