@@ -1,6 +1,9 @@
 # robert-half-coding-challenge
 Yelp API Search App
 
+## Viewing the App
+- Open `index.html` in any browser to view the Yelp App
+
 ### Web App that finds and displays the lowest rated parking lots in a given region using the Yelp API
 
 Requirements
